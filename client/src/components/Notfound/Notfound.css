@@ -1,0 +1,41 @@
+.notfound{
+    position: relative  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    width: 100vw;
+    height: 100vh;
+    margin: 1rem;  
+    box-sizing: border-box  ;
+}
+
+.notfound h1{
+    position: absolute;
+    top: 18%;
+    left: 20%;
+    font-size: 6rem;
+    color:#f09ad3;    
+    text-align: center;
+}
+.notfound h1,h2{
+    z-index: 1000;
+}
+
+.notfound h2{
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    font-size:4rem;
+    color: #96efeb;
+
+}
+.notfound .btn{
+    position: absolute;
+    bottom:25%;
+    right: 20%;
+    width: fit-content;
+    color: #fff;
+    background: #5eeb67;
+}

@@ -1,0 +1,24 @@
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .loader-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+   .post-over {
+    color:rgb(241, 55, 55);
+  }
+
+
+  .posts .error{
+    font-size: 1.6rem;
+  }

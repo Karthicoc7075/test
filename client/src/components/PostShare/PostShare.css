@@ -1,0 +1,119 @@
+.postShare{
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto; 
+}
+
+.postShare-wrapper{
+    padding: 1.2rem ;
+    background:rgba(255, 255, 255, 0.533) ;
+    border-radius: .8rem;
+    box-shadow: 2px 4px 4px -1px rgb(0,0,0,.1);
+}
+
+.post-input{
+    background:#e6e9fa;
+    padding: .8rem;
+    border-radius: .6rem;
+    /* box-shadow: 0 0 1px 2px #d9dcf3b1; */
+    margin-bottom: 1.4rem;
+}
+
+.post-input input{
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background:transparent ;
+}
+
+.post-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    width: 80%;
+}
+
+.post-option{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    color: #a2a2a4;
+    padding-bottom: .2rem;
+}
+
+.post-option .input-file{
+    position: absolute;
+    /* transform: scale(; */
+   opacity: 0;
+}
+.post-option::after{
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+
+ .post-option:hover::after{
+     width: 100%; 
+  left: 0; 
+}
+
+
+.post-option.picIcon{
+    color: #575bd4;
+}
+
+.post-option.picIcon::after{
+    background: #575bd4;
+}
+
+
+.post-option.videoIcon{
+    color: #e05353;
+}
+
+.post-option.videoIcon::after{
+    background: #e05353;
+}
+
+.post-option.gifIcon{
+    color: #5bd599;
+}
+
+.post-option.gifIcon::after{
+    background: #5bd599;
+}
+.share-btn{
+    background:#fe6b68 ; 
+    color: #ffffff;
+    transition: all .4 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.share-btn:hover{
+    background: #da5858d8;
+}
+
+@media screen and (max-width:767px) {
+    .post-options{
+        width: 100%;
+       
+    }
+
+    
+}
+
+@media screen and (max-width:499px){
+    .post-options{
+        padding: 0 1rem;
+    }
+    .post-option h5{
+        display: none;
+    }
+}

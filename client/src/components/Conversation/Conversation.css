@@ -1,0 +1,154 @@
+.conversation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.075);
+    color: #000;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 4px -1px rgb(0,0,0,.1); 
+    z-index: 100;
+    transition: all .6s  cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.conversation:hover{
+    background-color: rgb(184, 242, 250);
+    box-shadow: 2px 4px 6px -1px rgba(45, 162, 194, 0.432);
+}
+
+
+.conversation-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding:.6rem  ;
+    /* border: 1px solid; */
+
+}
+
+.conversation-profileImg{
+    width: 70px;
+    height: 56px;
+}
+
+.conversation-profileImg .image{
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem;
+}
+
+.conversation-info{
+    width: 100%;
+}
+.conversation-info  .conversation-headerInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: .4rem;
+
+}
+
+.conversation-info .conversation-headerInfo  .conversation-name{
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.conversation-info .conversation-headerInfo .conversation-time {
+    padding-right: auto;
+    font-size: .9rem;
+    color: #454545;
+
+}
+.conversation-info .conversation-message{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.conversation-info .conversation-message .conversation-last-message{
+    font-size: .8rem;
+    color: #969696;
+}
+
+/* .conversation:hover .conversation-info .conversation-message .conversation-last-message{
+    color: #616161;
+} */
+.conversation-info .conversation-message .conversation-unread-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    background: #5996f0;
+    color: #f6f6f6;
+    font-size: .8rem;
+    border-radius: 50px;
+    transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.conversation-info .conversation-message .conversation-unread-message.message-readed{
+    display: none;
+}
+
+
+@media screen and (max-width:992px) {
+    .conversation-headerInfo{
+        padding-right: 0 !important;
+    }
+}
+
+
+/* @media screen and (max-width:760px) {
+
+    .conversation-container{
+        padding: .2rem;
+    }
+   
+     .conversation-info{
+        display: none;
+        overflow: hidden;
+     }
+     .conversation-profileImg{
+        width: 70px;
+        height: 56px;
+    }
+    
+     .conversation-info  .conversation-headerInfo{
+        justify-content: start;
+        padding-right: 0;
+    
+    }
+
+     .conversation-info .conversation-headerInfo  .conversation-name{
+        font-size: .9rem;
+     }
+     .conversation-info .conversation-headerInfo .conversation-time{
+        display: none;
+     }
+     .conversation-info .conversation-message .conversation-unread-message{
+        display: none;
+     }
+     .conversation-info .conversation-message .conversation-last-message{
+        display: none;
+     }
+} */
+
+/* 
+@media screen and (max-width:560px) {
+      .conversation{
+        width: fit-content;
+      }
+   
+     .conversation-profileImg{
+        width: 56px;
+        height: 56px;
+    }
+    
+
+
+     .conversation-info  {
+        display: none;
+        visibility: hidden;
+     }
+    
+} */

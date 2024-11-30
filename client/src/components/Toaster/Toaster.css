@@ -1,0 +1,85 @@
+
+.toaster{
+    position: absolute;
+    top:4%;
+    /* left: 45%; */
+    min-width:160px;
+    width: 20%;
+    /* max-width: 240px; */
+    height: 40px;
+    color: #fff;
+    /* filter: blur(1px); */
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    border-radius: 4px 4px 8px 8px rgb(0,0,0,.4) ;
+    z-index: 1000;
+    padding:  1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    transition: all linear;
+    animation: test 10s infinite;
+}
+    
+.toaster div{
+    width: 100%;
+    height: 2px;
+
+    background: red;
+        animation: test1 10s infinite ;
+    transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.toaster.red{
+    background: #ff5555;
+}
+
+.toaster.green{
+    background: #37cf5d;
+}
+
+@keyframes test1{
+    0%{
+        width: 100%;
+    }
+
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes test{
+    0%{
+        right: -100%;
+        top: 4%;
+    }
+    8%{
+        right: 7%;
+        top: 4%;
+    }
+    
+    12%{
+        right: 5%;
+        top: 4%;
+
+    }
+
+    90%{
+        right: 5%;
+        top: 4%;
+
+    }
+
+    98%{
+        right: 0%;        
+        top: 4%;
+
+    }
+    100%{
+        right: -100%;        
+        top: 4%;
+
+    }
+}
